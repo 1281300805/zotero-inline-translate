@@ -1,5 +1,10 @@
-pref-title = 插件模板设置示例
-pref-enable =
-    .label = 开启
-pref-input = 输入
-pref-help = { $name } Build { $version } { $time }
+pref-title = 页面内翻译
+pref-enabled =
+    .label = 在 PDF 文字选区中显示“翻译并替换”
+pref-api-base = DeepSeek API 地址
+pref-api-key = DeepSeek API Key
+pref-model = 模型
+pref-target-language = 目标语言
+pref-system-prompt = 系统提示词
+pref-test-connection = 测试连接
+pref-help = 译文只作为 Zotero 阅读器中的视觉覆盖层，不会修改原 PDF。单击译文可查看原文，右键可删除译文。API Key 保存在本机 Zotero 配置中。

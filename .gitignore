@@ -14,3 +14,10 @@ tsconfig.tsbuildinfo
 .scaffold
 build
 logs
+
+# Local credentials and diagnostics
+api.txt
+annotation-click-debug.json
+font-style-debug.json
+*.xpi
+*.log

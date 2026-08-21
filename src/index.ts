@@ -6,6 +6,10 @@ const basicTool = new BasicTool();
 
 // @ts-expect-error - Plugin instance is not typed
 if (!basicTool.getGlobal("Zotero")[config.addonInstance]) {
+  // Keep Zotero itself on the plugin global, matching maintained Zotero 9
+  // plugins. This avoids resolving it through a content-window wrapper after
+  // a reader event enters the plugin.
+  _globalThis.Zotero = basicTool.getGlobal("Zotero");
   _globalThis.addon = new Addon();
   defineGlobal("ztoolkit", () => {
     return _globalThis.addon.data.ztoolkit;

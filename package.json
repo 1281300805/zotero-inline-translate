@@ -1,24 +1,21 @@
 {
-  "name": "zotero-plugin-template",
+  "name": "zotero-inline-translate",
   "type": "module",
-  "version": "3.1.0",
-  "description": "Zotero Plugin Template",
+  "version": "0.4.40",
+  "description": "Translate selected PDF text and display the translation in place.",
   "config": {
-    "addonName": "Zotero Plugin Template",
-    "addonID": "addontemplate@euclpts.com",
-    "addonRef": "addontemplate",
-    "addonInstance": "AddonTemplate",
-    "prefsPrefix": "extensions.zotero.addontemplate"
+    "addonName": "Inline Translate for Zotero",
+    "addonID": "inline-translate@readpaper.local",
+    "addonRef": "inlinetranslate",
+    "addonInstance": "InlineTranslate",
+    "prefsPrefix": "extensions.zotero.inlinetranslate"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windingwind/zotero-plugin-template.git"
+    "url": "git+https://github.com/1281300805/zotero-inline-translate.git"
   },
-  "author": "windingwind",
-  "bugs": {
-    "url": "https://github.com/windingwind/zotero-plugin-template/issues"
-  },
-  "homepage": "https://github.com/windingwind/zotero-plugin-template#readme",
+  "author": "1281300805",
+  "homepage": "https://github.com/1281300805/zotero-inline-translate",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",
@@ -27,6 +24,7 @@
     "lint:fix": "prettier --write . && eslint . --fix",
     "release": "zotero-plugin release",
     "test": "zotero-plugin test",
+    "test:unit": "mocha test/annotationMapping.test.mjs",
     "update-deps": "npm update --save"
   },
   "dependencies": {

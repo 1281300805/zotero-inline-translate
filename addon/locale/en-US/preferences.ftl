@@ -1,5 +1,10 @@
-pref-title = Addon Template Example
-pref-enable =
-    .label = Enable
-pref-input = Input
-pref-help = { $name } Build { $version } { $time }
+pref-title = Inline Translate
+pref-enabled =
+    .label = Show “Translate and replace” for PDF text selections
+pref-api-base = DeepSeek API base URL
+pref-api-key = DeepSeek API key
+pref-model = Model
+pref-target-language = Target language
+pref-system-prompt = System prompt
+pref-test-connection = Test connection
+pref-help = Translations are visual overlays in Zotero and do not modify the PDF. Click an overlay to reveal the original text; right-click it to delete it. The API key is stored locally in your Zotero profile preferences.

@@ -3,7 +3,6 @@
   "name": "__addonName__",
   "version": "__buildVersion__",
   "description": "__description__",
-  "homepage_url": "__homepage__",
   "author": "__author__",
   "icons": {
     "48": "content/icons/favicon@0.5x.png",
@@ -12,9 +11,8 @@
   "applications": {
     "zotero": {
       "id": "__addonID__",
-      "update_url": "__updateURL__",
-      "strict_min_version": "6.999",
-      "strict_max_version": "8.*"
+      "strict_min_version": "8.0",
+      "strict_max_version": "9.*"
     }
   }
 }

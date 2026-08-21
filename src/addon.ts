@@ -2,6 +2,7 @@ import { config } from "../package.json";
 import { ColumnOptions, DialogHelper } from "zotero-plugin-toolkit";
 import hooks from "./hooks";
 import { createZToolkit } from "./utils/ztoolkit";
+import { ReaderOverlayManager } from "./modules/readerOverlays";
 
 class Addon {
   public data: {
@@ -10,7 +11,9 @@ class Addon {
     // Env type, see build.js
     env: "development" | "production";
     initialized?: boolean;
+    startupError?: string;
     ztoolkit: ZToolkit;
+    readerOverlays?: ReaderOverlayManager;
     locale?: {
       current: any;
     };
